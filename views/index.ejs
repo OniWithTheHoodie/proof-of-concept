@@ -1,0 +1,16 @@
+<%- include('./partials/head') %>
+<%- include('./partials/nav') %>
+
+<body>
+    <ul class="bread_crumb">
+        <li><a href="">audit</a></li>
+        <li><a href="">Rewrite and improve existing text</a></li>
+        <li><a href="">Transform notes to audit documentation</a></li>
+    </ul>
+    <% allPrompts.forEach(prompt => { %>      
+        <p><%= prompt.text %></p>
+    <% }) %>
+ 
+
+
+<%- include('./partials/foot') %>
