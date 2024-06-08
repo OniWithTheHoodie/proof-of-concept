@@ -34,7 +34,7 @@ app.get('/', function(request, response){
     fetchJson(deloittePrompt)
     // hier wordt de reactie gerenderd tot index.ejs en geef ik mee de data deloittePrompt
     response.render('index', {
-        allPrompts: deloittePrompt.data,
+        allPrompts: deloittePrompt.data
     })
 })
 

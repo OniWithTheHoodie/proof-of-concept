@@ -1,5 +1,29 @@
 :root {
+    /* LIGHT MODE */
     --color-accent: #6fc2b4;
+    --color-text: #000000;
+    --color-base: #ddefe8;
+    --color-card: #f7f9fb;
+    --color-error: #da291c;
+    --color-nav-text: #ffffff;
+    --color-secondary-light: #352121;
+    --color-secondary-mid: #97999b;
+    --color-secondary-tint: #63666a;
+    --color-support: #007680;
+    --color-tint-support: #004f59;
+    --message-shadow: 0px 2px 4px 0px rgba(0,0,0, 0.15);
+
+    /* DARK MODE */
+    --color-accent: #007680;
+    --color-text: #ffffff;
+    --color-base: #004f59;
+    --color-card: #333333;
+    --color-error: #fc0a0a;
+    --color-nav-text: #000000;
+    --color-secondary-light: #515d69;
+    --color-secondary-mid: #ececec;
+    --color-secondary-tint: #ddefe8;
+    --color-support: #6fc2b4;
 }
 
 * {
@@ -13,59 +37,89 @@ body {
     font-family: open, sans-serif;
 }
 
-nav {
+/* NAVBAR */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     align-items: center;
 }
 
-.gash::after {
+.navbar__logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+.navbar__gash::after {
     content: "|";
     padding-left: 10px;
 }
 
-ul.navbar {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    width: 100%;
-}
-
-.hamburger-container {
-    margin-left: auto;
-}
-
-.dot::after {
+.navbar__dot::after {
     content: ".";
     color: var(--color-accent);
 }
 
-input[type="radio"] {
+.navbar__hamburger-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__hamburger-label {
+    cursor: pointer;
+}
+
+.navbar__hamburger-input {
     display: none;
 }
 
-ul.bread_crumb {
+.navbar__menu {
+    display: none; /* Hide menu by default */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar__hamburger-input:checked + .navbar__menu {
+    display: flex; /* Show menu when checkbox is checked */
+}
+
+.navbar__menu-item {
+    margin: 5px 0;
+}
+
+.navbar__menu-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* breadcrumb */
+
+.breadcrumb__list {
     display: flex;
     flex-direction: row;
-    /* gap: 10px; */
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-ul.bread_crumb > li {
+.breadcrumb__item {
     padding: 10px;
     white-space: nowrap;
 }
 
-a {
+.breadcrumb__item > a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+.breadcrumb__item > a:hover {
     color: var(--color-accent);
 }
 
