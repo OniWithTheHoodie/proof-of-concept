@@ -1,22 +1,23 @@
 <%- include('./partials/head') %>
-<%- include('./partials/nav') %>
 
 <body>
-    <main class="main">
-        <nav class="breadcrumb">
-            <ul class="breadcrumb__list">
-                <li class="breadcrumb__item"><a href="" class="breadcrumb__link">audit</a></li>
-                <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Rewrite and improve existing text</a></li>
-                <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Transform notes to audit documentation</a></li>
-            </ul>
-        </nav>
+    <%- include('./partials/nav') %>
 
-        <article class="article">
-            <% allPrompts.forEach(prompt => { %>      
-                <p class="article__paragraph"><%= prompt.text %></p>
-            <% }) %>
-        </article>
-    </main>
+        <main class="main">
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="" class="breadcrumb__link">audit</a></li>
+                    <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Rewrite and improve existing text</a></li>
+                    <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Transform notes to audit documentation</a></li>
+                </ul>
+            </nav>
+
+            <article class="article">
+                <% allPrompts.forEach(prompt => { %>      
+                    <p class="article__paragraph"><%= prompt.text %></p>
+                <% }) %>
+            </article>
+        </main>
 
 <%- include('./partials/foot') %>
 
