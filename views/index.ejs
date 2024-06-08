@@ -3,23 +3,13 @@
 <body>
     <%- include('./partials/nav') %>
 
-        <main class="main">
-            <nav class="breadcrumb">
-                <ul class="breadcrumb__list">
-                    <li class="breadcrumb__item"><a href="" class="breadcrumb__link">audit</a></li>
-                    <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Rewrite and improve existing text</a></li>
-                    <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Transform notes to audit documentation</a></li>
-                </ul>
-            </nav>
+    <%- include('./partials/breadcrumb') %>
 
-            <article class="article">
-                <% allPrompts.forEach(prompt => { %>      
-                    <p class="article__paragraph"><%= prompt.text %></p>
-                <% }) %>
-            </article>
-        </main>
+        <button class="buttonAudit"><a href="">Audit</a></button>
+        <button class="buttonConsulting"><a href="">Consulting</a></button>
+        <button class="buttonInnovation"><a href="">Innovation</a></button>
 
-<%- include('./partials/foot') %>
+    <%- include('./partials/foot') %>
 
 </body>
 </html>

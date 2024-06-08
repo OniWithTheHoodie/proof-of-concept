@@ -123,6 +123,7 @@ body {
     color: var(--color-accent);
 }
 
-p {
+/* article */
+.article {
     padding: 10px;
 }
