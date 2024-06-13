@@ -1,0 +1,30 @@
+<%- include('./partials/head') %>
+
+<body>
+        <%- include('./partials/nav') %>
+
+        <main class="main">
+            <%- include('./partials/breadcrumb') %>
+        
+            <form class="form" action="">
+                <h2 class="form__header">Prompt</h2>
+                <% allPrompts.forEach(prompt => { %>      
+                    <p class="form__paragraph">
+                        <%- prompt.text.replace("{{ Financial Statement File }}", '<input type="text" name="financial_statement_file" placeholder="Financial Statement File">')
+                                    .replace("{{ Review Date }}", '<input type="date" name="review_date" placeholder="Review Date">')
+                                    .replace("{{ Lead Auditor }}", '<input type="text" name="lead_auditor" placeholder="Lead Auditor">') %>
+                    </p>
+
+                    <%- include('./partials/buttonSecondary') %>
+
+                    <a class="form__cancel" href="">Cancel</a>
+
+                <% }) %>
+            </form>
+        
+        </main> 
+        
+        <%- include('./partials/foot') %>
+    </div>
+</body>
+</html>

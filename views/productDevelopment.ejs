@@ -1,0 +1,31 @@
+<%- include('./partials/head') %>
+
+<body>
+        <%- include('./partials/nav') %>
+
+        <main class="main">
+
+            <%- include('./partials/breadcrumb') %>
+        
+            <form class="form" action="">
+                <h2 class="form__header">Prompt</h2>
+                <% allPrompts.forEach(prompt => { %>      
+                    <p class="form__paragraph">
+                        <%- prompt.text.replace("{{ Product Features }}", '<input type="text" name="Product_Features" placeholder="Product Features">')
+                                    .replace("{{ Target Market }}", '<input type="text" name="Target_Market" placeholder="Target Market">')
+                                    .replace("{{ Estimated Cost }}", '<input type="number" name="Estimated_Cost" placeholder="Estimated Cost">') %>
+                    </p>
+
+                    <%- include('./partials/buttonSecondary') %>
+
+                    <a class="form__cancel" href="">Cancel</a>
+
+                <% }) %>
+            </form>
+        
+        </main> 
+        
+        <%- include('./partials/foot') %>
+    </div>
+</body>
+</html>

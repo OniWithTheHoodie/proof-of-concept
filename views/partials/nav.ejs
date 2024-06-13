@@ -1,23 +1,28 @@
-<nav class="navbar">
-  <div class="navbar__logo-container">
-    <img class="navbar__logo" src="/assets/headstart-logo.png" alt="Head start logo" width="30px" height="30px">
-    <h2 class="navbar__gash">Headstart</h2>
-    <h2 class="navbar__dot">Deloitte</h2>
-  </div>
-  <div class="navbar__hamburger-container">
-    <label for="hamburger" class="navbar__hamburger-label">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-        <path fill="none" d="M0 0h24v24H0z"/>
-        <path fill="currentColor" d="M4 5h16v2H4zM4 11h16v2H4zM4 17h16v2H4z"/>
-      </svg>
-    </label>
-    <input id="hamburger" type="checkbox" class="navbar__hamburger-input" aria-label="hamburger menu">
-    <ul class="navbar__menu">
-      <!-- Future list elements for the hamburger menu -->
-      <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Home</a></li>
-      <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">About</a></li>
-      <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+<div class="grid-container">
+  <nav class="navbar">
+    <div class="navbar__logo-container">
+      <a class="navbar__link" href="/"><img class="navbar__logo" src="/assets/headstart-logo.png" alt="Head start logo" width="30px" height="30px"></a>
+      <h2 class="navbar__gash">Headstart</h2>
+      <h2 class="navbar__dot">Deloitte</h2>
+    </div>
+    <div class="navbar__hamburger-container">
+      <label for="hamburger" class="navbar__hamburger-label">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z"/>
+          <path fill="currentColor" d="M4 5h16v2H4zM4 11h16v2H4zM4 17h16v2H4z"/>
+        </svg>
+      </label>
+      <input id="hamburger" type="checkbox" class="navbar__hamburger-input" aria-label="hamburger menu">
+      <ul class="navbar__menu">
+        <a href="" class="buttons__new">New chat</a>
+        <div class="navbar__search-container">
+          <input class="navbar__search" type="search" name="search" aria-label="search" placeholder="search">
+        </div>
+        <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Audit</a></li>
+        <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Consulting</a></li>
+        <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Innovation</a></li>
+      </ul>
+    </div>
+  </nav>
+
 

@@ -1,0 +1,31 @@
+<%- include('./partials/head') %>
+
+<body>
+        <%- include('./partials/nav') %>
+
+        <main class="main">
+
+            <%- include('./partials/breadcrumb') %>
+        
+            <form class="form" action="">
+                <h2 class="form__header">Prompt</h2>
+                <% allPrompts.forEach(prompt => { %>      
+                    <p class="form__paragraph">
+                        <%- prompt.text.replace("{{ Launch Date }}", '<input type="date" name="Launch_Date" placeholder="Launch Date">')
+                                    .replace("{{ Marketing Budget }}", '<input type="number" name="Marketing_Budget" placeholder="Marketing Budget">')
+                                    .replace("{{ Project Manager }}", '<input type="text" name="Project_Manager" placeholder="Project Manager">') %>
+                    </p>
+
+                    <%- include('./partials/buttonSecondary') %>
+
+                    <a class="form__cancel" href="">Cancel</a>
+
+                <% }) %>
+            </form>
+        
+        </main> 
+        
+        <%- include('./partials/foot') %>
+    </div>
+</body>
+</html>

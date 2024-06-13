@@ -3,12 +3,13 @@
 <body>
     <%- include('./partials/nav') %>
 
-    <%- include('./partials/breadcrumb') %>
-
-        <button class="buttonAudit"><a href="">Audit</a></button>
-        <button class="buttonConsulting"><a href="">Consulting</a></button>
-        <button class="buttonInnovation"><a href="">Innovation</a></button>
-
+        <nav class="buttons">
+            <a href="/audit" class="buttons__link">Audit</a>
+            <a href="/innovation" class="buttons__link">Innovation</a>
+            <a href="/consulting" class="buttons__link">Consulting</a>
+        </nav>
+  
+      
     <%- include('./partials/foot') %>
 
 </body>

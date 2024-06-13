@@ -1,0 +1,31 @@
+<%- include('./partials/head') %>
+
+<body>
+        <%- include('./partials/nav') %>
+
+        <main class="main">
+
+            <%- include('./partials/breadcrumb') %>
+        
+            <form class="form" action="">
+                <h2 class="form__header">Prompt</h2>
+                <% allPrompts.forEach(prompt => { %>      
+                    <p class="form__paragraph">
+                        <%- prompt.text.replace("{{ Main Findings }}", '<input type="textarea" name="Main_findings" placeholder="Main findings">')
+                                    .replace("{{ Supporting Documents }}", '<input type="file" name="Supporting_Documents" placeholder=" Supporting Documents">')
+                                    .replace("{{ Report Submission Date }}", '<input type="date" name="Report_Submission_Date" placeholder="Report Submission Date">') %>
+                    </p>
+
+                    <%- include('./partials/buttonSecondary') %>
+
+                    <a class="form__cancel" href="">Cancel</a>
+
+                <% }) %>
+            </form>
+        
+        </main> 
+        
+        <%- include('./partials/foot') %>
+    </div>
+</body>
+</html>
