@@ -5,11 +5,16 @@
 
         <main class="main">
 
-            <%- include('./partials/breadcrumb') %>
-        
-            <h2 class="form__header">Prompt</h2>
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                    <li class="breadcrumb__item"><a href="/consulting" class="breadcrumb__link">Consulting</a></li>
+                    <li class="breadcrumb__item"><a href="/clientMeetings" class="breadcrumb__link">Client meetings</a></li>
+                </ul>
+            </nav>
 
             <form class="form" action="">
+                <h2 class="form__header">Prompt</h2>
                 <% allPrompts.forEach(prompt => { %>      
                     <p class="form__paragraph">
                         <%- prompt.text.replace("{{ Meeting Date and Time }}", '<input type="datetime-local" name="Meeting_Date_and_Time" placeholder="Meeting Date and Time">')

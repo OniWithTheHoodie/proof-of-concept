@@ -3,14 +3,18 @@
 <body>
     <%- include('./partials/nav') %>
 
-    <%- include('./partials/breadcrumb') %>
-
+    <nav class="breadcrumb">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+            <li class="breadcrumb__item"><a href="/innovation" class="breadcrumb__link">Innovation</a></li>
+        </ul>
 
         <nav class="buttons">
             <a href="/productDevelopment" class="buttons__link">Product Development</a>
             <a href="/productLaunchPlanning" class="buttons__link">Product Launch Planning</a>
             <a href="/marketResearch" class="buttons__link">Market Research</a>
         </nav>
+    </nav>
   
       
     <%- include('./partials/foot') %>

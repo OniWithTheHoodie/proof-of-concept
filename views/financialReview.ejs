@@ -4,7 +4,14 @@
         <%- include('./partials/nav') %>
 
         <main class="main">
-            <%- include('./partials/breadcrumb') %>
+            
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                    <li class="breadcrumb__item"><a href="/audit" class="breadcrumb__link">Audit</a></li>
+                    <li class="breadcrumb__item"><a href="/financialReview" class="breadcrumb__link">Financial Review</a></li>
+                </ul>
+            </nav>
         
             <form class="form" action="">
                 <h2 class="form__header">Prompt</h2>

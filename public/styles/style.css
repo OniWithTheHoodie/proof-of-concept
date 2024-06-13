@@ -85,7 +85,7 @@ body {
 }
 
 .navbar__search-container::before {
-    content: '🔍';
+    content: '';
     position: absolute;
     /* top: 9.5%; */
     color: var(--color-accent);
@@ -229,7 +229,7 @@ body {
     .grid-container {
         display: grid;
         grid-template-columns: 300px 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
         grid-template-areas: 
         'navbar main'
         'navbar form';
@@ -258,7 +258,7 @@ body {
     }
 
     .navbar__search-container::before {
-        content: '🔍';
+        content: '';
         position: absolute;
         left: 65px;
         top: 15%;
@@ -298,24 +298,22 @@ body {
      }
 
      .breadcrumb {
-        padding: 10px;
+        padding: 30px;
      }
 
      .form {
         padding: 20px;
      }
 
-     /* .buttons {
-        padding: 40px;
+     .buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1em;
-        align-items: center;
         justify-content: center;
     }
-     */
+    
     .buttons__link {
-        width: 300px;
+        width: 100%;
         text-align: center;
     }
     
