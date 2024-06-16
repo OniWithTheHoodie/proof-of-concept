@@ -1,33 +1,69 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+Dit project gaat over het Funda redesign waar ik samen met mijn mede student Yujing een pleaserable UI maken. 
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
 
-## Inhoudsopgave
+Voor het installeren van dit project kun je eerst het project forken...
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+1. Door een nieuwe fork te maken waar jij als developer ene nieuwe repository kunt aanmaken
 
-## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/2a0310f4-54e3-431d-b98c-fb9991570065)
 
-## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+2. Vervolgens druk je op code 
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/b91afb22-e017-4dd9-857e-dc277fb8ac99)
 
-## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+3. Als je Github Desktop hebt geinstalleerd op jou OS dan kun je het project openen via Github desktop.
 
-## Bronnen
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/2846ab18-2787-4676-a68b-54421402aa0a)
 
-## Licentie
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+4. Dit is het scherm die je zou moeten krijgen
+
+![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/2493dfe8-afc8-4923-9e27-ee7a47a22fb4)
+
+5. Door op open via visual studio te drukken kun je alle bestanden en code zien.
+
+![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/e2ffaec5-0ac3-4fbf-8949-ce1844c50afd)
+
+6. Alleen moet je nog de packages installeren dat ontbreekt. Door dat te doen moet je in de terminal van VS code npm install doen om te de packages te installeren.
+
+   ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/13121804-e371-4563-9425-c1e868268f00)
+
+7. Dit installeerd alle packages
+
+![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/e4b7bd0b-9110-4a10-aa11-c583093eec44)
+
+8. Als je Github desktop en Node.JS niet hebt kun je ze allemaal installeren. 
+
+**Github Desktop:**
+
+https://desktop.github.com/
+
+**Node.JS:**
+
+https://nodejs.org/en
+
+9. Voor de website moet je vervolgens in de terminal met npm start de website runnen. Het wordt gehost in poort:8000
+   
+    ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/2967b7a4-8da1-4acb-aae4-49838b61b5b7)
+
+10. ALs je vervolgens op localhost:8000 drukt gaat de pagina openen
+    
+    ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/ab4f9581-2627-437d-b44d-646870668a42)
+
+    ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/a69984e2-f867-4f65-8c1f-078312e2c3d5)
+
+
+
+Voor de website van Funda is het bedoeld dat deze punten er in komen.....
+
+## User stories
+
+* As a User, I want to be able to see all my saved houses so that I can have a general impression of which houses I'm interested in.
+
+* As a User, I want to be able to see all te details of a saved house so that I can reconsider if it is still a house I want to keep in my favorite houses list.
+
+* As a User, I want to be able to create custom ratting points so that so I have a better control over qualities of the object that I value.
+
+* As a User, I want be able to create custom lists of houses that can then be shared with another user so that we can together and on asynchronous way veto or approve houses that we like.
+
+
