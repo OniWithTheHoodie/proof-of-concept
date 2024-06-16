@@ -13,7 +13,8 @@ Voor het installeren van dit project kun je eerst het project forken...
 
 3. Als je Github Desktop hebt geinstalleerd op jou OS dan kun je het project openen via Github desktop.
 
-![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/624952f1-e8b8-4a71-896e-710463dea8d2)
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/2846ab18-2787-4676-a68b-54421402aa0a)
+
 
 4. Dit is het scherm die je zou moeten krijgen
 
