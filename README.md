@@ -5,7 +5,7 @@ Voor het installeren van dit project kun je eerst het project forken...
 
 1. Door een nieuwe fork te maken waar jij als developer ene nieuwe repository kunt aanmaken
 
-![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/fd4050f4-dc05-4565-bc3e-f88e27271cf7)
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/2a0310f4-54e3-431d-b98c-fb9991570065)
 
 2. Vervolgens druk je op code 
 
