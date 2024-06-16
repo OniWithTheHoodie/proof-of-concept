@@ -14,12 +14,12 @@
             </nav>
         
             <form class="form" action="">
-                <h2 class="form__header">Prompt</h2>
+                <h1 class="form__header">Create market research prompt</h1>
                 <% allPrompts.forEach(prompt => { %>      
                     <p class="form__paragraph">
-                        <%- prompt.text.replace("{{ Survey Results }}", '<input type="file" name="Survey_Results" placeholder="Survey Results">')
-                                    .replace("{{ Survey Completion Date }}", '<input type="date" name="Survey_Completion_Date" placeholder="Survey Completion Date">')
-                                    .replace("{{ Survey Coordinator }}", '<input type="text" name="Survey_Coordinator" placeholder="Survey Coordinator">') %>
+                        <%- prompt.text.replace("{{ Survey Results }}", '<input class="form__input" type="file" name="Survey_Results" placeholder="Survey Results">')
+                                    .replace("{{ Survey Completion Date }}", '<input class="form__input" type="date" name="Survey_Completion_Date" placeholder="Survey Completion Date">')
+                                    .replace("{{ Survey Coordinator }}", '<input class="form__input" type="text" name="Survey_Coordinator" placeholder="Survey Coordinator">') %>
                     </p>
 
                     <%- include('./partials/buttonSecondary') %>

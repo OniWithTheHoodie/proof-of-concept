@@ -14,12 +14,12 @@
             </nav>
             
                 <form class="form" action="">
-                    <h2 class="form__header">Prompt</h2>
+                    <h1 class="form__header">Create compliance check prompt</h1>
                     <% allPrompts.forEach(prompt => { %>      
                         <p class="form__paragraph">
-                            <%- prompt.text.replace("{{ Last Compliance Review Date }}", '<input type="date" name="Last_compliance_review_date" placeholder="Last compliance review date">')
-                                        .replace("{{ Compliance Officer }}", '<input type="text" name="Compliance_officer" placeholder=" Compliance officer">')
-                                        .replace("{{ Compliance Document }}", '<input type="file" name="Compliance_Document" placeholder="Compliance Document">') %>
+                            <%- prompt.text.replace("{{ Last Compliance Review Date }}", '<input class="form__input" type="date" name="Last_compliance_review_date" placeholder="Last compliance review date">')
+                                        .replace("{{ Compliance Officer }}", '<input class="form__input" type="text" name="Compliance_officer" placeholder=" Compliance officer">')
+                                        .replace("{{ Compliance Document }}", '<input class="form__input" type="file" name="Compliance_Document" placeholder="Compliance Document">') %>
                         </p>
         
                         <%- include('./partials/buttonSecondary') %>

@@ -14,12 +14,12 @@
             </nav>
         
             <form class="form" action="">
-                <h2 class="form__header">Prompt</h2>
+                <h1 class="form__header">Create product launch prompt</h1>
                 <% allPrompts.forEach(prompt => { %>      
                     <p class="form__paragraph">
-                        <%- prompt.text.replace("{{ Launch Date }}", '<input type="date" name="Launch_Date" placeholder="Launch Date">')
-                                    .replace("{{ Marketing Budget }}", '<input type="number" name="Marketing_Budget" placeholder="Marketing Budget">')
-                                    .replace("{{ Project Manager }}", '<input type="text" name="Project_Manager" placeholder="Project Manager">') %>
+                        <%- prompt.text.replace("{{ Launch Date }}", '<input class="form__input" type="date" name="Launch_Date" placeholder="Launch Date">')
+                                    .replace("{{ Marketing Budget }}", '<input class="form__input" type="number" name="Marketing_Budget" placeholder="Marketing Budget">')
+                                    .replace("{{ Project Manager }}", '<input class="form__input" type="text" name="Project_Manager" placeholder="Project Manager">') %>
                     </p>
 
                     <%- include('./partials/buttonSecondary') %>
