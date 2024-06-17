@@ -1,5 +1,4 @@
-Dit project gaat over het Funda redesign waar ik samen met mijn mede student Yujing een pleaserable UI maken. 
-
+Dit project gaat over het Deloitte promp, hiervoor maak ik een chatbot. de gebruikers voor wie dit gemaakt wordt zijn de werknemers. Binnen deze chatbot kunnen  werknemers prompts invullen en dingen zoals facturen, financial reviews etc. opzoeken. 
 
 Voor het installeren van dit project kun je eerst het project forken...
 
@@ -59,16 +58,7 @@ https://nodejs.org/en
 
 
 
-Voor de website van Funda is het bedoeld dat deze punten er in komen.....
+Voor de website van Deloitte is het bedoeld dat deze punten er in komen.....
 
 ## User stories
-
-* As a User, I want to be able to see all my saved houses so that I can have a general impression of which houses I'm interested in.
-
-* As a User, I want to be able to see all te details of a saved house so that I can reconsider if it is still a house I want to keep in my favorite houses list.
-
-* As a User, I want to be able to create custom ratting points so that so I have a better control over qualities of the object that I value.
-
-* As a User, I want be able to create custom lists of houses that can then be shared with another user so that we can together and on asynchronous way veto or approve houses that we like.
-
 
