@@ -1,4 +1,4 @@
-Dit project gaat over het Deloitte promp, hiervoor maak ik een chatbot. de gebruikers voor wie dit gemaakt wordt zijn de werknemers. Binnen deze chatbot kunnen  werknemers prompts invullen en dingen zoals facturen, financial reviews etc. opzoeken. 
+Dit project gaat over het Deloitte prompt, hiervoor maak ik een chatbot. de gebruikers voor wie dit gemaakt wordt zijn de werknemers. Binnen deze chatbot kunnen  werknemers prompts invullen en dingen zoals facturen, financial reviews etc. opzoeken. 
 
 Voor het installeren van dit project kun je eerst het project forken...
 
@@ -62,3 +62,12 @@ Voor de website van Deloitte is het bedoeld dat deze punten er in komen.....
 
 ## User stories
 
+* Installatie en configuratie van Node.js, Express.js en projectstructuurWeek 1: Installatie en configuratie van Node.js, Express.js en projectstructuur
+* Implementeer server-side rendered views voor het weergeven van promptcategorieën en basisnavigatie.
+* Verbind met de backend RESTful API en start met het parsen van JSON-gegevens voor categorieën en prompts.
+* Ontwikkel server-side logica voor dynamische routing en weergave van content gebaseerd op gebruikersselecties.
+* Verhoog gebruikersinteractie met JavaScript voor dynamische formulier-aanpassingen en CSS voor lay-outverbeteringen. Progressieve verbetering.
+* Verhoog gebruikersinteractie met JavaScript voor dynamische formulier-aanpassingen en CSS voor lay-outverbeteringen. Progressieve verbetering.
+* Implementeer backend logica voor het dynamisch genereren en beheren van verschillende soorten invoervelden binnen prompts.
+* Test en optimaliseer de web applicatie voor snelheid en responsiviteit. Bij voorkeur voer je deze testen uit met gebruikers van Deloitte.
+* Voeg optionele functies toe, zoals dark mode, iteractie met OpenAI (contact met client binnen Deloitte) binnen de backend, Authenticatie(kan van alles zijn) of geavanceerde formulier validatie
