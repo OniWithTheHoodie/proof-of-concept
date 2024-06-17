@@ -18,8 +18,8 @@
                 <% allPrompts.forEach(prompt => { %>      
                     <p class="form__paragraph">
                         <%- prompt.text.replace("{{ Meeting Date and Time }}", '<input class="form__input" type="datetime-local" name="Meeting_Date_and_Time" placeholder="Meeting Date and Time">')
-                                    .replace("{{ Meeting Agenda }}", '<input class="form__input" type="textarea" name="Meeting_Agenda" placeholder="Meeting Agenda">')
-                                    .replace("{{ Client Contact Information }}", '<input class="form__input" type="text" name="Client_Contact_Information" placeholder="Client Contact Information">') %>
+                                       .replace("{{ Meeting Agenda }}", '<input class="form__input" type="textarea" name="Meeting_Agenda" placeholder="Meeting Agenda">')
+                                       .replace("{{ Client Contact Information }}", '<input class="form__input" type="text" name="Client_Contact_Information" placeholder="Client Contact Information">') %>
                     </p>
 
                     <%- include('./partials/buttonSecondary') %>
