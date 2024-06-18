@@ -276,6 +276,10 @@ body {
     grid-area: link5;
 }
 
+.buttons__link:hover {
+   background-color: var(--color-dark-secondary-light);
+}
+
 /* form */
 .form {
     display: flex;

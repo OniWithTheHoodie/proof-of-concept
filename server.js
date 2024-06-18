@@ -1,5 +1,5 @@
 // Importeerd npm pakket express uit de node_modules map
-import express from 'express'
+import express, { response } from 'express'
 
 
 // Importeerd de zelfgemaakte functie fetchJson uit de ./helpers map
@@ -16,7 +16,7 @@ const deloitteResearch = await fetchJson(apiUrl + 'items/deloitte_prompts?filter
 const deloitteProcessing = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=6')
 const deloitteMeetings = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=7')
 // hier log ik om te kijken of de data wel goed word opgehaald door de deloittePrompt te loggen in de terminal krijg ik data terug gestuurd
-console.log(deloitteResearch)
+// console.log(deloitteResearch)
 
 // hier maak ik een nieuwe express app aan
 const app = express()
@@ -34,6 +34,8 @@ app.use(express.json());
 
 // Zorg dat werken met request data makkelijker wordt
 app.use(express.urlencoded({extended: true}))
+
+const promptMessages = []
 
 // Hier haal ik de root op dat is index.ejs waar een functie word gemaakt en vraag het op en wacht op een reactie en daarna word de URL in deloittePrompt gefetched
 app.get('/', function(request, response){
@@ -60,15 +62,48 @@ app.get('/innovation', function(request, response){
 })
 
 // Route to financialReview.ejs
-app.get('/financialReview', function(request, response){
+app.get('/financialReview', async function(request, response){
     // hier wordt de reactie gerenderd tot index.ejs en geef ik mee de data deloittePrompt
-    fetchJson(deloitteFinancial)
-    // hier wordt de reactie gerenderd tot index.ejs en geef ik mee de data deloittePrompt
-    response.render('financialReview', {
+    try{
+        response.render('financialReview', {
         allPrompts: deloitteFinancial.data
-    })
-})
+    });
+    } catch (error) {
+        console.error("Error fetching prompts:", error);
+    }
+});
 
+app.post('/financialReview', async function(request, response) {
+    console.log('whatup?', request.body);
+    try {
+      const dataToUpdate = {
+        id: 1, 
+        inputs: {
+          financialStatement: request.body.financial_statement_file,
+          financialDate: request.body.review_date,
+          financialAuditor: request.body.lead_auditor,
+        }
+      };
+      
+      const response = await fetch('https://fdnd-agency.directus.app/items/deloitte_prompts?filter[id][_eq]=1', {
+        method: 'PATCH',
+        body: JSON.stringify(dataToUpdate),
+        headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+      });
+  
+      console.log(!response.ok)
+      if (response.ok) {
+        throw new Error(`Error updating prompt: ${response.statusText}`);
+      }
+      console.log("Prompt is succesvol geupdate!");
+    } catch (error) {
+      console.error("Error tijdens update:", error);
+      "Er ging wat mis tijdens de update";
+    }
+    response.redirect(303, '/financialReview');
+  });
+
+  
 // Route to complianceCheck.ejs
 app.get('/complianceCheck', function(request, response){
     // hier wordt de reactie gerenderd tot index.ejs en geef ik mee de data deloittePrompt
