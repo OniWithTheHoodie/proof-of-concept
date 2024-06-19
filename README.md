@@ -1,5 +1,4 @@
-Dit project gaat over het Funda redesign waar ik samen met mijn mede student Yujing een pleaserable UI maken. 
-
+Dit project gaat over het Deloitte prompt, hiervoor maak ik een chatbot. de gebruikers voor wie dit gemaakt wordt zijn de werknemers. Binnen deze chatbot kunnen  werknemers prompts invullen en dingen zoals facturen, financial reviews etc. opzoeken. 
 
 Voor het installeren van dit project kun je eerst het project forken...
 
@@ -18,21 +17,25 @@ Voor het installeren van dit project kun je eerst het project forken...
 
 4. Dit is het scherm die je zou moeten krijgen
 
-![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/2493dfe8-afc8-4923-9e27-ee7a47a22fb4)
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/6c29b166-8962-45d1-a132-dc5aad66eec9)
+
 
 5. Door op open via visual studio te drukken kun je alle bestanden en code zien.
 
-![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/e2ffaec5-0ac3-4fbf-8949-ce1844c50afd)
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/28c08d32-1c54-4253-85af-77c620b847d3)
+
 
 6. Alleen moet je nog de packages installeren dat ontbreekt. Door dat te doen moet je in de terminal van VS code npm install doen om te de packages te installeren.
 
-   ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/13121804-e371-4563-9425-c1e868268f00)
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/923cc6ef-fb65-4df9-8190-f0419e9f9f39)
+
 
 7. Dit installeerd alle packages
 
-![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/e4b7bd0b-9110-4a10-aa11-c583093eec44)
+![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/93f08963-2022-42f3-b0c2-6a4bce4e01d9)
 
-8. Als je Github desktop en Node.JS niet hebt kun je ze allemaal installeren. 
+
+8. Als je Github desktop en Node.JS niet hebt kun je ze allemaal installeren via.  
 
 **Github Desktop:**
 
@@ -44,7 +47,8 @@ https://nodejs.org/en
 
 9. Voor de website moet je vervolgens in de terminal met npm start de website runnen. Het wordt gehost in poort:8000
    
-    ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/2967b7a4-8da1-4acb-aae4-49838b61b5b7)
+   ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/3c3ddfe5-1ba2-495d-a8ce-0b7ec5566893)
+
 
 10. ALs je vervolgens op localhost:8000 drukt gaat de pagina openen
     
@@ -54,16 +58,16 @@ https://nodejs.org/en
 
 
 
-Voor de website van Funda is het bedoeld dat deze punten er in komen.....
+Voor de website van Deloitte is het bedoeld dat deze punten er in komen.....
 
 ## User stories
 
-* As a User, I want to be able to see all my saved houses so that I can have a general impression of which houses I'm interested in.
-
-* As a User, I want to be able to see all te details of a saved house so that I can reconsider if it is still a house I want to keep in my favorite houses list.
-
-* As a User, I want to be able to create custom ratting points so that so I have a better control over qualities of the object that I value.
-
-* As a User, I want be able to create custom lists of houses that can then be shared with another user so that we can together and on asynchronous way veto or approve houses that we like.
-
-
+* Installatie en configuratie van Node.js, Express.js en projectstructuurWeek 1: Installatie en configuratie van Node.js, Express.js en projectstructuur
+* Implementeer server-side rendered views voor het weergeven van promptcategorieën en basisnavigatie.
+* Verbind met de backend RESTful API en start met het parsen van JSON-gegevens voor categorieën en prompts.
+* Ontwikkel server-side logica voor dynamische routing en weergave van content gebaseerd op gebruikersselecties.
+* Verhoog gebruikersinteractie met JavaScript voor dynamische formulier-aanpassingen en CSS voor lay-outverbeteringen. Progressieve verbetering.
+* Verhoog gebruikersinteractie met JavaScript voor dynamische formulier-aanpassingen en CSS voor lay-outverbeteringen. Progressieve verbetering.
+* Implementeer backend logica voor het dynamisch genereren en beheren van verschillende soorten invoervelden binnen prompts.
+* Test en optimaliseer de web applicatie voor snelheid en responsiviteit. Bij voorkeur voer je deze testen uit met gebruikers van Deloitte.
+* Voeg optionele functies toe, zoals dark mode, iteractie met OpenAI (contact met client binnen Deloitte) binnen de backend, Authenticatie(kan van alles zijn) of geavanceerde formulier validatie
