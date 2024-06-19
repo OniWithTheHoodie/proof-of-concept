@@ -35,7 +35,8 @@ app.use(express.json());
 // Zorg dat werken met request data makkelijker wordt
 app.use(express.urlencoded({extended: true}))
 
-const promptMessages = []
+// hier word de data die ingevoerd word in de forumlier meegegeven in de variable promptMessages en dit wil ik hiermee kunnen weergeven in de pagina
+const promptMessages = [];
 
 // Hier haal ik de root op dat is index.ejs waar een functie word gemaakt en vraag het op en wacht op een reactie en daarna word de URL in deloittePrompt gefetched
 app.get('/', function(request, response){
@@ -62,37 +63,63 @@ app.get('/innovation', function(request, response){
 })
 
 // Route to financialReview.ejs
-app.get('/financialReview', async function(request, response){
-    // hier wordt de reactie gerenderd tot index.ejs en geef ik mee de data deloittePrompt
-    try{
-        response.render('financialReview', {
-        allPrompts: deloitteFinancial.data
+app.get('/financialReview',  async function(request, response){
+    // binnen de financial review render geef ik de data van de url: https://fdnd-agency.directus.app/items/deloitte_prompts?filter[id][_eq]=1 
+    // hier haal ik en weergeef ik de tekst door allPrompts te renderen in financialReview.ejs
+    // promptMessages is de ingevoerde data in de form die ook word gerenderd in financialReview.ejs dit komt vanuit de lege array const promptMessages = [];
+    response.render('financialReview', {
+        allPrompts: deloitteFinancial.data,
+        promptMessages: promptMessages 
     });
-    } catch (error) {
-        console.error("Error fetching prompts:", error);
-    }
 });
 
-app.post('/financialReview', async function(request, response) {
+app.post('/financialReview', function(req, res) {
+    // Data die ik van de form heb opgehaald variables aangemaakt gebaseerd op de input velden ik request uit de body van de html de name="" waardes 
+    // voor de inputs: financialStatement, reviewDate, leadAuditor en om de text mee te nemen input: originalText
+    const financialStatement = req.body.financial_statement_file;
+    const reviewDate = req.body.review_date;
+    const leadAuditor = req.body.lead_auditor;
+    const originalText = req.body.original_text;
+
+    // hier log ik de form om te kijken wat er ontvangen is van de data die is ingevoerd in de form
+    console.log('Received data:', financialStatement, reviewDate, leadAuditor, originalText);
+
+    // filledText een variable waarmee ik de hele text van de variable originalText mee geef en daarin vervang ik de text door met de replace method alle curly braces te 
+    // verbergen en te vervangen met data die wordt ingevoerd in: financialStatement, reviewDate en leadAuditor dit zijn de variablen voor de request.body van de inputs 
+    let filledText = originalText.replace("{{ Financial Statement File }}", financialStatement)
+                                   .replace("{{ Review Date }}",  reviewDate)
+                                   .replace("{{ Lead Auditor }}", leadAuditor);
+
+    // Hier log ik de ingevulde text
+    console.log('Filled text:', filledText);
+
+    // hier zeg ik duw of zet de ingevulde text in filledText in de lege array promptMessages
+    promptMessages.push(filledText);
+
+    // Redirect terug naar de financialReview.ejs pagina
+    res.redirect(303, '/financialReview');
+});
+
+app.post('/financialReviewOld', async function(request, response) {
     console.log('whatup?', request.body);
     try {
-      const dataToUpdate = {
-        id: 1, 
-        inputs: {
-          financialStatement: request.body.financial_statement_file,
-          financialDate: request.body.review_date,
-          financialAuditor: request.body.lead_auditor,
-        }
-      };
-      
-      const response = await fetch('https://fdnd-agency.directus.app/items/deloitte_prompts?filter[id][_eq]=1', {
-        method: 'PATCH',
-        body: JSON.stringify(dataToUpdate),
-        headers: { 'Content-Type': 'application/json; charset=UTF-8' },
-      });
-  
+        const dataToUpdate = {
+            id: 1, 
+            inputs: {
+              financialSF: request.body.financial_statement_file,
+              financialRD: request.body.review_date,
+              financialLA: request.body.lead_auditor
+            }
+        };
+        
+        const response = await fetch('https://fdnd-agency.directus.app/items/deloitte_prompts', {
+            method: 'PATCH',
+            body: JSON.stringify(dataToUpdate),
+            headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+        });
+    
       console.log(!response.ok)
-      if (response.ok) {
+      if (!response.ok) {
         throw new Error(`Error updating prompt: ${response.statusText}`);
       }
       console.log("Prompt is succesvol geupdate!");
@@ -102,7 +129,6 @@ app.post('/financialReview', async function(request, response) {
     }
     response.redirect(303, '/financialReview');
   });
-
   
 // Route to complianceCheck.ejs
 app.get('/complianceCheck', function(request, response){
