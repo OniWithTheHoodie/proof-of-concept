@@ -100,36 +100,6 @@ app.post('/financialReview', function(req, res) {
     res.redirect(303, '/financialReview');
 });
 
-app.post('/financialReviewOld', async function(request, response) {
-    console.log('whatup?', request.body);
-    try {
-        const dataToUpdate = {
-            id: 1, 
-            inputs: {
-              financialSF: request.body.financial_statement_file,
-              financialRD: request.body.review_date,
-              financialLA: request.body.lead_auditor
-            }
-        };
-        
-        const response = await fetch('https://fdnd-agency.directus.app/items/deloitte_prompts', {
-            method: 'PATCH',
-            body: JSON.stringify(dataToUpdate),
-            headers: { 'Content-Type': 'application/json; charset=UTF-8' },
-        });
-    
-      console.log(!response.ok)
-      if (!response.ok) {
-        throw new Error(`Error updating prompt: ${response.statusText}`);
-      }
-      console.log("Prompt is succesvol geupdate!");
-    } catch (error) {
-      console.error("Error tijdens update:", error);
-      "Er ging wat mis tijdens de update";
-    }
-    response.redirect(303, '/financialReview');
-  });
-  
 // Route to complianceCheck.ejs
 app.get('/complianceCheck', function(request, response){
     // hier wordt de reactie gerenderd tot index.ejs en geef ik mee de data deloittePrompt
