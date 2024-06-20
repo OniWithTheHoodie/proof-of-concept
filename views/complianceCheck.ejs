@@ -22,10 +22,10 @@
                                         .replace("{{ Compliance Document }}", '<input class="form__input" type="file" name="Compliance_Document" placeholder="Compliance Document">') %>
                         </p>
         
-                        <button type="submit" class="button__link--Secondary">Start conversation using this prompt</button>
-        
-                        <a class="form__cancel" href="">Cancel</a>
-        
+                        <div class="form__container--buttons">
+                            <input class="form__button" type="submit" value="Start conversation using this prompt">
+                            <input class="form__cancel" type="reset" value="cancel" />
+                        </div>
                     <% }) %>
                 </form>
         

@@ -22,10 +22,10 @@
                                     .replace("{{ Survey Coordinator }}", '<input class="form__input" type="text" name="Survey_Coordinator" placeholder="Survey Coordinator">') %>
                     </p>
 
-                    <button type="submit" class="button__link--Secondary">Start conversation using this prompt</button>
-
-                    <a class="form__cancel" href="">Cancel</a>
-
+                    <div class="form__container--buttons">
+                        <input class="form__button" type="submit" value="Start conversation using this prompt">
+                        <input class="form__cancel" type="reset" value="cancel" />
+                    </div>
                 <% }) %>
             </form>
         

@@ -28,16 +28,18 @@
                     <!-- prompt.text komt vanuit de JSON die is gefilterd op id:1 de text: Json text met de curly brackets -->
                     <input type="hidden" name="original_text" value="<%- prompt.text %>">
                     <input type="hidden" value="<%= prompt.name %>">
-                    <input class="button__link--Secondary" type="submit" value="Start conversation using this prompt">
-
-                    <a class="form__cancel" href="">Cancel</a>
-
+                    <div class="form__container--buttons">
+                        <input class="form__button" type="submit" value="Start conversation using this prompt">
+                        <input class="form__cancel" type="reset" value="cancel" />
+                    </div>
                 <% }) %>
             </form>
         
             <!-- Hier word de prompt bericht die in de lege array zit weergeven in een list -->
-                <li> <%= promptMessages  %></li>
-
+            <ul aria-label="This is received prompt" class="prompt">  
+                <h2 class="prompt__send"> Send prompt</h2> 
+                <li aria-label="received prompt message" class="prompt__message"> <%= promptMessages %></li>
+            </ul> 
         </main> 
         
         <%- include('./partials/foot') %>
