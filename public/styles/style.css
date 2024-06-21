@@ -257,8 +257,8 @@ body {
 }
 
 .secondbuttons__link {
-    width: 10em;
-    height: 120px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
     background-color: var(--color-accent);
     text-align: center;
@@ -266,6 +266,9 @@ body {
     text-decoration: none;
     color: var(--color-nav-text);
     line-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondbuttons__link:nth-of-type(1) {
@@ -435,16 +438,30 @@ body {
         border-radius: 5px;
         text-decoration: none;
         color: var(--color-nav-text);
+        animation: gelatine 0.5s infinite;
      }
 
     .buttons__new:hover {
         background-color: var(--color-dark-secondary-light);
      }
 
+
      .buttons__new::after {
         content: "+";
         padding: 5px;
      }
+
+     .secondbuttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      ". secondbuttons__img secondbuttons__img ."
+      "link4 link4 link5 link5";
+    justify-items: center;
+    padding: 20px;
+    gap: 1em;
+}
 
     .navbar__hamburger-label {
         display: none;
@@ -475,8 +492,13 @@ body {
     }
     
     .buttons__link {
-        width: 100%;
+        display: flex;
         text-align: center;
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        align-items: center;
     }
 
     .form__container--buttons {
