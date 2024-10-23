@@ -1,3 +1,5 @@
+# Deloitte
+
 Dit project gaat over het Deloitte prompt, hiervoor maak ik een chatbot. de gebruikers voor wie dit gemaakt wordt zijn de werknemers. Binnen deze chatbot kunnen  werknemers prompts invullen en dingen zoals facturen, financial reviews etc. opzoeken. 
 
 Voor het installeren van dit project kun je eerst het project forken...
@@ -50,15 +52,13 @@ https://nodejs.org/en
    ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/3c3ddfe5-1ba2-495d-a8ce-0b7ec5566893)
 
 
-10. ALs je vervolgens op localhost:8000 drukt gaat de pagina openen
+10. Ass je vervolgens op localhost:8000 drukt in de terminal opent de pagina vanzelf.
     
     ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/ab4f9581-2627-437d-b44d-646870668a42)
 
     ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/a69984e2-f867-4f65-8c1f-078312e2c3d5)
 
-
-
-Voor de website van Deloitte is het bedoeld dat deze punten er in komen.....
+Link naar de webpagina: https://proof-of-concept-kaoe.onrender.com/
 
 ## User stories
 
@@ -71,3 +71,4 @@ Voor de website van Deloitte is het bedoeld dat deze punten er in komen.....
 * Implementeer backend logica voor het dynamisch genereren en beheren van verschillende soorten invoervelden binnen prompts.
 * Test en optimaliseer de web applicatie voor snelheid en responsiviteit. Bij voorkeur voer je deze testen uit met gebruikers van Deloitte.
 * Voeg optionele functies toe, zoals dark mode, iteractie met OpenAI (contact met client binnen Deloitte) binnen de backend, Authenticatie(kan van alles zijn) of geavanceerde formulier validatie
+
