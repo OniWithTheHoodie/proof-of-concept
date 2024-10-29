@@ -84,3 +84,6 @@ Volg de instructies op de websites om de installatie te voltooien.
     ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/ab4f9581-2627-437d-b44d-646870668a42)
 
 
+# 👷🏾‍♂️ Gebruik
+
+Basisfunctionaliteiten:
