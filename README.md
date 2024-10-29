@@ -1,10 +1,10 @@
 # Deloitte
 
-Dit project is een drie weken durende oefening waarin ik mijn kennis en vaardigheden demonstreer die ik het afgelopen jaar heb opgedaan. De nadruk ligt hierbij op onderwerpen zoals toegankelijkheid, semantische HTML en serverside-programmering.
+Dit project is een drie weken durende oefening waarin ik de kennis en vaardigheden demonstreer die ik het afgelopen jaar heb opgedaan. De nadruk ligt hierbij op onderwerpen zoals toegankelijkheid, semantische HTML en serverside-programmering met behulp van Node.js en EJS.
 
-Het project is gebaseerd op de Deloitte-opdracht en bestaat uit een chatbot waarmee gebruikers specifieke onderwerpen kunnen opvragen via prompts. Gebruikers kunnen hun eigen input invullen voor de gekozen prompt, waarna de volledige prompt met hun ingevulde gegevens als tekst terug wordt gegeven.
+Het project is gebaseerd op de Deloitte-opdracht en bestaat uit een chatbot waarmee gebruikers specifieke onderwerpen kunnen opvragen via prompts. Gebruikers kunnen hun eigen input invullen voor de gekozen prompt, waarna de volledige prompt met hun ingevulde gegevens als tekst wordt teruggegeven.
 
-Deze chatbot is bedoeld voor medewerkers van Deloitte, en stelt hen in staat om eenvoudig prompts in te vullen en informatie op te zoeken zoals facturen, financiële rapportages en andere bedrijfsinformatie.
+Deze chatbot is ontworpen voor medewerkers van Deloitte en stelt hen in staat om eenvoudig prompts in te vullen en informatie op te zoeken, zoals facturen, financiële rapportages en andere bedrijfsinformatie.
 
 ## User stories
 
