@@ -24,9 +24,9 @@ Link naar de webpagina: https://proof-of-concept-kaoe.onrender.com/
 
 # 💻 Installatie
 
-Voor het installeren van dit project kun je eerst het project forken...
+Voor het installeren van dit project, fork eerst de repository naar je eigen account.
 
-1. Door een nieuwe fork te maken waar jij als developer een nieuwe repository kunt aanmaken
+1. Maak een nieuwe fork van het project om als developer een eigen repository aan te maken.
 
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/2a0310f4-54e3-431d-b98c-fb9991570065)
 
@@ -34,22 +34,22 @@ Voor het installeren van dit project kun je eerst het project forken...
 
 ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/b91afb22-e017-4dd9-857e-dc277fb8ac99)
 
-3. Als je Github Desktop hebt geinstalleerd op jou OS(Operating system) dan kun je het project openen via Github desktop.
+3. Als je GitHub Desktop op je besturingssysteem hebt geïnstalleerd, kun je het project openen via GitHub Desktop.
 
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/2846ab18-2787-4676-a68b-54421402aa0a)
 
 
-4. Dit is het scherm die je zou moeten krijgen
+4. Dit is het scherm dat je zou moeten zien.
 
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/6c29b166-8962-45d1-a132-dc5aad66eec9)
 
 
-5. Door op open via visual studio te drukken kun je alle bestanden en code zien.
+5. Door op "Open in Visual Studio" te klikken, kun je alle bestanden en de code bekijken.
 
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/28c08d32-1c54-4253-85af-77c620b847d3)
 
 
-6. Alleen moet je nog de packages installeren dat ontbreekt. Door dat te doen moet je in de terminal van VS code npm install doen om de packages te installeren.
+6. Je moet nog de ontbrekende packages installeren. Open de terminal in VS Code en voer het commando npm install uit om alle benodigde packages te installeren.
 
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/923cc6ef-fb65-4df9-8190-f0419e9f9f39)
 
@@ -59,7 +59,7 @@ Voor het installeren van dit project kun je eerst het project forken...
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/93f08963-2022-42f3-b0c2-6a4bce4e01d9)
 
 
-8. Als je Github desktop en Node.JS niet hebt kun je ze allemaal installeren via.  
+8. Als je GitHub Desktop en Node.js nog niet hebt geïnstalleerd, kun je beide programma's downloaden en installeren via de volgende links: 
 
 **Github Desktop:**
 
@@ -69,12 +69,15 @@ https://desktop.github.com/
 
 https://nodejs.org/en
 
-9. Voor de website moet je vervolgens in de terminal met npm start de website runnen. Het wordt gehost in poort:8000
+Volg de instructies op de websites om de installaties te voltooien.
+
+
+9. Om de website te starten, gebruik je in de terminal het commando npm start. De website wordt gehost op poort 8000.
    
    ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/3c3ddfe5-1ba2-495d-a8ce-0b7ec5566893)
 
 
-10. Ass je vervolgens op localhost:8000 drukt in de terminal opent de pagina vanzelf.
+10. Als je vervolgens op localhost:8000 in je browser gaat, opent de pagina automatisch.
     
     ![image](https://github.com/OniWithTheHoodie/pleasurable-ui/assets/144009897/ab4f9581-2627-437d-b44d-646870668a42)
 
