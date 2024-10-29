@@ -38,13 +38,13 @@ Voor het installeren van dit project, fork eerst de repository naar je eigen acc
 
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/2846ab18-2787-4676-a68b-54421402aa0a)
 
-Als je GitHub Desktop nog niet hebt geïnstalleerd, kun je het downloaden en installeren via de volgende link: 
+Als je GitHub Desktop nog niet hebt geïnstalleerd, kun je het downloaden en installeren via de volgende link:
 
 **Github Desktop:**
 
 https://desktop.github.com/
 
-Volg de instructies op de websites om de installatie te voltooien.
+Volg de instructies op de website om de installatie te voltooien.
 
 4. Dit is het scherm dat je zou moeten zien.
 
@@ -56,7 +56,7 @@ Volg de instructies op de websites om de installatie te voltooien.
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/28c08d32-1c54-4253-85af-77c620b847d3)
 
 
-6. Je moet nog de ontbrekende packages installeren hiervoor heb je Nodes.js nodig. Open de terminal in VS Code en voer het commando npm install uit om alle benodigde packages te installeren.
+6. Je moet nog de ontbrekende packages installeren; hiervoor heb je Node.js nodig. Open de terminal in VS Code en voer het commando npm install uit om alle benodigde packages te installeren.
 
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/923cc6ef-fb65-4df9-8190-f0419e9f9f39)
 
@@ -74,7 +74,7 @@ Volg de instructies op de websites om de installatie te voltooien.
 ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/93f08963-2022-42f3-b0c2-6a4bce4e01d9)
 
 
-8. Om de website te starten, gebruik je in de terminal het commando npm start. De website wordt gehost op poort 8000.
+8. Om de website te starten, gebruik je in de terminal het command npm start. De website wordt gehost op poort 8000.
    
    ![image](https://github.com/OniWithTheHoodie/proof-of-concept/assets/144009897/3c3ddfe5-1ba2-495d-a8ce-0b7ec5566893)
 
