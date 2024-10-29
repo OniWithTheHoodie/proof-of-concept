@@ -92,7 +92,21 @@ Wat belangerijk is om dit werkend te krijgen is dat je data binnen directus opha
 
 ```js 
 
+// Importeerd de zelfgemaakte functie fetchJson uit de ./helpers map
+import fetchJson from './helpers/fetch-json.js'
+
+
+// Haal ik de Url vooor fdnd-agency in Directus op en zet ik het in een variable genaamd apiURL
+const apiUrl = 'https://fdnd-agency.directus.app/'
+// Haal ik deloitte prompts tabel op en voeg ik samen met apirURL variable tot 1 URL waar de variable deloittePrompt word
+const deloitteFinancial = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=1')
+const deloitteCompliance = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=2')
+const deloitteDevelopment = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=3')
+const deloittePlanning = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=4')
+const deloitteResearch = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=5')
+const deloitteProcessing = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=6')
+const deloitteMeetings = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=7')
 
 ```
-![image](https://github.com/user-attachments/assets/525b5842-aacf-4f32-90dc-71903cff8ad9)
+
 
