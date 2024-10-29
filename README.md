@@ -108,6 +108,23 @@ const deloitteProcessing = await fetchJson(apiUrl + 'items/deloitte_prompts?filt
 const deloitteMeetings = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=7')
 
 ```
+Voor de prompt kun je een formulier maken. In dit geval heeft het formulier de action /financialReview en de method POST. Hier worden de ingevoerde gegevens binnen de financial review verzonden en weergegeven.
+
+Met de prompt.text.replace-methode worden de gegevens binnen de accolades vervangen door HTML-inputs. Het is belangrijk dat deze invoer plaatsvindt tussen <%- en %>. Dit betekent dat de waarde in het sjabloon wordt ingevoegd zonder te worden ontsnapt. In de context van HTML betekent dit dat speciale karakters in de waarde worden weergegeven zoals ze zijn, zonder dat ze worden omgezet in HTML-entiteiten.
+
+```js
+
+<form class="form" action="/financialReview" method="POST">
+   <h1 class="form__header">Create financial review prompt</h1>
+       <% allPrompts.forEach(prompt => { %>      
+         <p tabindex="0" class="form__paragraph">
+            <%- prompt.text.replace("{{ Financial Statement File }}", '<input class="form__input" type="text" name="financial_statement_file" placeholder="Financial Statement File">')
+                                    .replace("{{ Review Date }}", '<input class="form__input" type="date" name="review_date" placeholder="Review Date">')
+                                    .replace("{{ Lead Auditor }}", '<input class="form__input" type="text" name="lead_auditor" placeholder="Lead Auditor">') %>
+          </p>
+
+```
+
 Dit is een stuk van de JSON-code voor de prompts. Het tekstgedeelte bevindt zich tussen de accolades. De teksten "Financial statement file", "Review date" en "Lead auditor" kunnen worden vervangen met de replace-methode. Hierbij kun je HTML-invoervelden meegeven, zoals:
 
 * Voor "Financial statement file": `<input type="file">`
