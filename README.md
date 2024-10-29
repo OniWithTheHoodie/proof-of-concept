@@ -214,4 +214,29 @@ app.post('/financialReview', function(req, res) {
 
 # 🔨 Architectuur en Structuur
 
-
+```
+/root
+│
+├── server.js
+│
+└── views
+    ├── partials
+    │   ├── breadcrumb.ejs
+    │   ├── buttonSecondary.ejs
+    │   ├── foot.ejs
+    │   ├── head.ejs
+    │   └── nav.ejs
+    │
+    ├── audit.ejs
+    ├── clientMeeting.ejs
+    ├── complianceCheck.ejs
+    ├── consulting.ejs
+    ├── documentProcessing.ejs
+    ├── financialReview.ejs
+    ├── index.ejs
+    ├── innovation.ejs
+    ├── marketResearch.ejs
+    ├── productDevelopment.ejs
+    ├── productLaunchPlanning.ejs
+    └── submitReview.ejs
+```
