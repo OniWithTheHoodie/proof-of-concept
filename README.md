@@ -263,3 +263,11 @@ De views map bevat de partials map met losse componenten. Daarnaast zijn er in d
     └── submitReview.ejs
 
 ```
+# Contactinformatie
+
+Als je vragen hebt of meer wilt weten over dit project, neem dan gerust contact met me op:
+
+E-mail: LesleyReynolds92@gmail.com
+LinkedIn: [linkedin.com/in/jouw-profiel](https://www.linkedin.com/feed/)
+
+Ik waardeer je interesse en kijk ernaar uit om van je te horen!
