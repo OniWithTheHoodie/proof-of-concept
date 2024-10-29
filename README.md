@@ -87,3 +87,12 @@ Volg de instructies op de websites om de installatie te voltooien.
 # 👷🏾‍♂️ Gebruik
 
 Basisfunctionaliteiten:
+
+Wat belangerijk is om dit werkend te krijgen is dat je data binnen directus ophaald 
+
+```js 
+
+
+```
+![image](https://github.com/user-attachments/assets/525b5842-aacf-4f32-90dc-71903cff8ad9)
+
