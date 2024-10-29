@@ -108,5 +108,46 @@ const deloitteProcessing = await fetchJson(apiUrl + 'items/deloitte_prompts?filt
 const deloitteMeetings = await fetchJson(apiUrl + 'items/deloitte_prompts?filter[id][_eq]=7')
 
 ```
+Dit is een stuk van de JSON-code voor de prompts. Het tekstgedeelte bevindt zich tussen de accolades. De teksten "Financial statement file", "Review date" en "Lead auditor" kunnen worden vervangen met de replace-methode. Hierbij kun je HTML-invoervelden meegeven, zoals:
+
+* Voor "Financial statement file": `<input type="file">`
+* Voor "Review date": `<input type="date">`
+* Voor "Lead auditor": `<input type="text">`
+
+Dit stelt gebruikers in staat om de relevante informatie eenvoudig in te voeren.
+
+```JS 
+
+{
+  "categories": [
+    {
+      "name": "Audit",
+      "subcategories": [
+        {
+          "name": "Financial Review",
+          "prompts": [
+            {
+              "id": 1,
+              "label": "Quarterly Financial Statement Review",
+              "text": "As an experienced auditor, you are tasked with thoroughly reviewing the quarterly financial statements to ensure accuracy and compliance with regulatory standards. Please upload the {{ Financial Statement File }} for further analysis, indicate the {{ Review Date }}, and assign the task to the {{ Lead Auditor }}.",
+              "variables": [
+                {
+                  "type": "file",
+                  "label": "Financial Statement File"
+                },
+                {
+                  "type": "date",
+                  "label": "Review Date"
+                },
+                {
+                  "type": "text",
+                  "label": "Lead Auditor"
+                }
+              ]
+            }
+          ]
+        },
+
+```
 
 
