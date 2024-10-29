@@ -88,7 +88,7 @@ Volg de instructies op de websites om de installatie te voltooien.
 
 Basisfunctionaliteiten:
 
-Wat belangerijk is om dit werkend te krijgen is dat je data binnen directus ophaald 
+Wat belangrijk is om dit werkend te krijgen, is dat je de data ophaalt binnen Directus.
 
 ```js 
 
