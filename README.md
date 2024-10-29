@@ -1,8 +1,8 @@
-# Deloitte
+# Deloitte(Headstart)
 
 Dit project is een drie weken durende oefening waarin ik de kennis en vaardigheden demonstreer die ik het afgelopen jaar heb opgedaan. De nadruk ligt hierbij op onderwerpen zoals toegankelijkheid, semantische HTML en serverside-programmering met behulp van Node.js en EJS.
 
-Het project is gebaseerd op de Deloitte-opdracht en bestaat uit een chatbot waarmee gebruikers specifieke onderwerpen kunnen opvragen via prompts. Gebruikers kunnen hun eigen input invullen voor de gekozen prompt, waarna de volledige prompt met hun ingevulde gegevens als tekst wordt teruggegeven.
+Het project is gebaseerd op de Deloitte(Headstart) opdracht en bestaat uit een chatbot waarmee gebruikers specifieke onderwerpen kunnen opvragen via prompts. Gebruikers kunnen hun eigen input invullen voor de gekozen prompt, waarna de volledige prompt met hun ingevulde gegevens als tekst wordt teruggegeven.
 
 Deze chatbot is ontworpen voor medewerkers van Deloitte en stelt hen in staat om eenvoudig prompts in te vullen en informatie op te zoeken, zoals facturen, financiële rapportages en andere bedrijfsinformatie.
 
@@ -214,10 +214,32 @@ app.post('/financialReview', function(req, res) {
 
 # 🔨 Architectuur en Structuur
 
+In de root bevindt zich server.js, waarin de code is opgenomen voor de koppeling naar de Directus-server en de pagina's die worden gerenderd.
+
+In de public map vind je het Headstart-logo en het SVG-chaticoon.
+
+In de styles map staat de style.css.
+
+In de helpers map bevindt zich het bestand prompt-lib-deloitte.json, dat de JSON-structuur bevat met alle data. Deze data is al in Directus aanwezig, maar je kunt het gebruiken om te zien hoe het is ingericht.
+
+De views map bevat de partials map met losse componenten. Daarnaast zijn er in de views map verschillende losse EJS-bestanden, waaronder index.ejs en andere bestanden zoals clientMeeting.ejs, complianceCheck.ejs, enzovoort. Deze zijn gelinkt aan index.ejs.
+
 ```
+
 /root
 │
 ├── server.js
+│
+├── public
+│   ├── assets
+│   │   ├── headstart-logo.png
+│   │   └── chat-svgrepo-com.svg
+│   │
+│   └── styles
+│       └── style.css
+│
+├── helpers
+│   └── prompt-lib-deloitte.json
 │
 └── views
     ├── partials
@@ -239,4 +261,5 @@ app.post('/financialReview', function(req, res) {
     ├── productDevelopment.ejs
     ├── productLaunchPlanning.ejs
     └── submitReview.ejs
+
 ```
