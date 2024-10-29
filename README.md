@@ -150,4 +150,37 @@ Dit stelt gebruikers in staat om de relevante informatie eenvoudig in te voeren.
 
 ```
 
+```js
 
+// Route to financialReview.ejs
+app.get('/financialReview',  async function(request, response){
+    // binnen de financial review render geef ik de data van de url: https://fdnd-agency.directus.app/items/deloitte_prompts?filter[id][_eq]=1 
+    // hier haal ik en weergeef ik de tekst door allPrompts te renderen in financialReview.ejs
+    // promptMessages is de ingevoerde data in de form die ook word gerenderd in financialReview.ejs dit komt vanuit de lege array const promptMessages = [];
+    response.render('financialReview', {
+        allPrompts: deloitteFinancial.data,
+        promptMessages: promptMessages 
+    });
+});
+
+
+app.post('/financialReview', function(req, res) {
+    // Data die ik van de form heb opgehaald variables aangemaakt gebaseerd op de input velden ik request uit de body van de html de name="" waardes 
+    // voor de inputs: financialStatement, reviewDate, leadAuditor en om de text mee te nemen input: originalText
+    const financialStatement = req.body.financial_statement_file;
+    const reviewDate = req.body.review_date;
+    const leadAuditor = req.body.lead_auditor;
+    const originalText = req.body.original_text;
+
+
+    // hier log ik de form om te kijken wat er ontvangen is van de data die is ingevoerd in de form
+    console.log('Received data:', financialStatement, reviewDate, leadAuditor, originalText);
+
+
+    // filledText een variable waarmee ik de hele text van de variable originalText mee geef en daarin vervang ik de text door met de replace method alle curly braces te 
+    // verbergen en te vervangen met data die wordt ingevoerd in: financialStatement, reviewDate en leadAuditor dit zijn de variablen voor de request.body van de inputs 
+    let filledText = originalText.replace("{{ Financial Statement File }}", financialStatement)
+                                   .replace("{{ Review Date }}",  reviewDate)
+                                   .replace("{{ Lead Auditor }}", leadAuditor);
+
+```
